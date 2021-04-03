@@ -1,10 +1,10 @@
-# Grimoire-Mixins!
+# EO-Mixins!
 
 Collection of mixins for the core-mod [Grimoire](https://github.com/CrucibleMC/Grimoire)
 
 ### What is it?
 
-Grimoire-Mixins are coremods that will be injected inside other mods trying to fix and\or change their natural behavior.
+EO-Mixins are coremods that will be injected inside other mods trying to fix and\or change their natural behavior.
 
 Some modules may require [EventHelper-1.7.10-1.11.jar](https://github.com/CrucibleMC/Grimoire-Mixins/raw/master/libs/EventHelper-1.7.10-1.11.jar)
 
@@ -178,7 +178,7 @@ Seriously, don't throw all of them if you don't need them!
 
 ###### ThaumicEnergistics-Mixin
 
-* MixinThETileInventory - Attempt to fix a dupe.
+* MixinTheTileInventory - Attempt to fix a dupe.
 * Requirements:
   * ThaumicEnergistics Mod
   

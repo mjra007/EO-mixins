@@ -39,18 +39,15 @@ public abstract class MixinMagicalCrops extends BlockBush {
       int numberOfPulsars = getNumberOfPulsars(world,x,y-2,z);//first block is dirt, second would be the pulsar
 
       if(numberOfPulsars <=13){
-        //System.out.println(numberOfPulsars+" Triggered 13");
         ret.add(new ItemStack(this.func_149866_i(), 1, 0));//crop seed
         ret.add(new ItemStack(this.func_149865_P(), 1, 0));//crop essence
       }else if(numberOfPulsars <= 16){
-      //  System.out.println(numberOfPulsars+" Triggered 16");
         double chance = random.nextFloat();
         if(chance<=chanceOfDroppingEssence16Pulsars){
           ret.add(new ItemStack(this.func_149865_P(), 1, 0));
         }
         ret.add(new ItemStack(this.func_149866_i(), 1, 0));
       }else if (numberOfPulsars <=25){
-       // System.out.println(numberOfPulsars+" Triggered 25");
         double chance = random.nextFloat();
         if(chance<=chanceOfDroppingEssence25Pulsars){
           ret.add(new ItemStack(this.func_149865_P(), 1, 0));
@@ -62,7 +59,6 @@ public abstract class MixinMagicalCrops extends BlockBush {
           ret.add(new ItemStack(this.func_149866_i(), 1, 0));
         }
       }else{
-      //  System.out.println(numberOfPulsars+" Triggered above 25");
         double chance = random.nextFloat();
         if(chance<=chanceOfDroppingEssenceMoreThan25Pulsars){
           ret.add(new ItemStack(this.func_149865_P(), 1, 0));

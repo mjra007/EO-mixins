@@ -21,6 +21,6 @@ public abstract class MixinTileArcaneBore implements ITileEntity {
 
     @Inject(method = "dig", at = @At("HEAD"), cancellable = true)
     private void checkPermission(CallbackInfo ci) {
-        if (EventUtils.cantBreak(getFakePlayer(), digX, digY, digZ)) ci.cancel();
+        if (!EventUtils.cantBreak(getFakePlayer(), digX, digY, digZ)) ci.cancel();
     }
 }

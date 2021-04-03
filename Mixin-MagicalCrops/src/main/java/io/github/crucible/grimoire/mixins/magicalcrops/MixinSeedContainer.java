@@ -11,7 +11,7 @@ import org.spongepowered.asm.mixin.Overwrite;
 public abstract class MixinSeedContainer extends Container {
 
     /**
-     * @author EverNife
+     * @author mjra007
      * @reason Disable the Keyboard logic on the server-side to prevent 'java.lang.ClassNotFoundException: org.lwjgl.input.Keyboard'
      *
      *   func_75144_a = slotClick

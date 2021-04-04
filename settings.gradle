@@ -23,4 +23,6 @@ include 'Mixin-MagicalCrops'
 include 'Mixin-CrucibleTimeMachine'
 include 'Mixin-ArsMagica2'
 include 'Mixins-ThaumcraftGadomancy'
+include 'Mixin-Gadomancy'
+include 'Mixin-Railcraft'
 
